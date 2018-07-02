@@ -7,10 +7,11 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.FlipKart_LoginPage;
 import pages.HomePage;
+import pages.TestBase;
 
 import java.util.concurrent.TimeUnit;
 
-public class FlipKart_OrderPlacing {
+public class FlipKart_OrderPlacing extends TestBase {
     public static WebDriver driver;
 
     @BeforeSuite
