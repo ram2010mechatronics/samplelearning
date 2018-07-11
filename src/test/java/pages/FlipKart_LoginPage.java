@@ -17,12 +17,12 @@ public class FlipKart_LoginPage {
 
     public HomePage correctLogin(String username, String password) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Enter Email/Mobile number']")));
         driver.findElement(By.xpath("//form//following::input[@type='text']")).sendKeys(username);
         driver.findElement(By.xpath("//form//following::input[@type='password']")).sendKeys(password);
         driver.findElement(By.xpath("//button[@type='submit']//following-sibling::span[text()='Login']")).click();
         return new HomePage(driver);
     }
+
 }
 
 
