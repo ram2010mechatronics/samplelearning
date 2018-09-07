@@ -16,7 +16,7 @@ public class FlipKart_OrderPlacing extends TestBase {
 
     @BeforeSuite
     public void testBrowser() {
-        System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Automation related Downloads\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
