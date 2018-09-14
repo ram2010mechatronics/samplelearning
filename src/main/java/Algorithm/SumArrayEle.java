@@ -14,6 +14,7 @@ public class SumArrayEle {
             /*for(int j=0; j<e; j++)
                 arr[j] = s.nextInt();*/
             int[] arr = Arra(e);
+            int[] arr1 = Arra(e);
             int sum = s.nextInt();
             Arrays.sort(arr);
             System.out.println(result(arr,sum));
@@ -63,7 +64,7 @@ public class SumArrayEle {
     public static int[] Arra(int size) {
         int[] kickerNumbers = new int[size];
         for (int i = 0; i < kickerNumbers.length; i++) {
-            kickerNumbers[i] = randomRange(0, 100);
+            kickerNumbers[i] = randomRange(900, 2359);
         }
         System.out.println(Arrays.toString(kickerNumbers));
         return kickerNumbers;
